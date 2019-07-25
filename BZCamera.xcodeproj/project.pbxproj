@@ -10,6 +10,13 @@
 		D86E32B722EA0B0100F1CAC8 /* BZCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86E32AD22EA0B0100F1CAC8 /* BZCamera.framework */; };
 		D86E32BC22EA0B0100F1CAC8 /* BZCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32BB22EA0B0100F1CAC8 /* BZCameraTests.swift */; };
 		D86E32BE22EA0B0100F1CAC8 /* BZCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = D86E32B022EA0B0100F1CAC8 /* BZCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D86E32C922EA0BCC00F1CAC8 /* CameraFocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32C822EA0BCC00F1CAC8 /* CameraFocusSquare.swift */; };
+		D86E32CB22EA0BD300F1CAC8 /* CameraFocusSquare.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86E32CA22EA0BD300F1CAC8 /* CameraFocusSquare.xib */; };
+		D86E32CE22EA130F00F1CAC8 /* BZConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32CD22EA130F00F1CAC8 /* BZConstants.swift */; };
+		D86E32D122EA14B700F1CAC8 /* MediaFileCaptureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32D022EA14B700F1CAC8 /* MediaFileCaptureProtocol.swift */; };
+		D86E32D322EA152300F1CAC8 /* PhotoFileCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32D222EA152300F1CAC8 /* PhotoFileCaptureDelegate.swift */; };
+		D86E32D522EA1A7600F1CAC8 /* VideoFileCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32D422EA1A7600F1CAC8 /* VideoFileCaptureDelegate.swift */; };
+		D86E32D722EA1B9300F1CAC8 /* BZCameraSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86E32D622EA1B9300F1CAC8 /* BZCameraSessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		D86E32B622EA0B0100F1CAC8 /* BZCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86E32BB22EA0B0100F1CAC8 /* BZCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZCameraTests.swift; sourceTree = "<group>"; };
 		D86E32BD22EA0B0100F1CAC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86E32C822EA0BCC00F1CAC8 /* CameraFocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFocusSquare.swift; sourceTree = "<group>"; };
+		D86E32CA22EA0BD300F1CAC8 /* CameraFocusSquare.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraFocusSquare.xib; sourceTree = "<group>"; };
+		D86E32CD22EA130F00F1CAC8 /* BZConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZConstants.swift; sourceTree = "<group>"; };
+		D86E32D022EA14B700F1CAC8 /* MediaFileCaptureProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFileCaptureProtocol.swift; sourceTree = "<group>"; };
+		D86E32D222EA152300F1CAC8 /* PhotoFileCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFileCaptureDelegate.swift; sourceTree = "<group>"; };
+		D86E32D422EA1A7600F1CAC8 /* VideoFileCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFileCaptureDelegate.swift; sourceTree = "<group>"; };
+		D86E32D622EA1B9300F1CAC8 /* BZCameraSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZCameraSessionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +85,12 @@
 		D86E32AF22EA0B0100F1CAC8 /* BZCamera */ = {
 			isa = PBXGroup;
 			children = (
+				D86E32CF22EA148200F1CAC8 /* Delegates */,
+				D86E32CC22EA12F200F1CAC8 /* Constants */,
+				D86E32C722EA0B6F00F1CAC8 /* CameraFocusSquare */,
 				D86E32B022EA0B0100F1CAC8 /* BZCamera.h */,
 				D86E32B122EA0B0100F1CAC8 /* Info.plist */,
+				D86E32D622EA1B9300F1CAC8 /* BZCameraSessionManager.swift */,
 			);
 			path = BZCamera;
 			sourceTree = "<group>";
@@ -84,6 +102,33 @@
 				D86E32BD22EA0B0100F1CAC8 /* Info.plist */,
 			);
 			path = BZCameraTests;
+			sourceTree = "<group>";
+		};
+		D86E32C722EA0B6F00F1CAC8 /* CameraFocusSquare */ = {
+			isa = PBXGroup;
+			children = (
+				D86E32C822EA0BCC00F1CAC8 /* CameraFocusSquare.swift */,
+				D86E32CA22EA0BD300F1CAC8 /* CameraFocusSquare.xib */,
+			);
+			path = CameraFocusSquare;
+			sourceTree = "<group>";
+		};
+		D86E32CC22EA12F200F1CAC8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D86E32CD22EA130F00F1CAC8 /* BZConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D86E32CF22EA148200F1CAC8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				D86E32D022EA14B700F1CAC8 /* MediaFileCaptureProtocol.swift */,
+				D86E32D222EA152300F1CAC8 /* PhotoFileCaptureDelegate.swift */,
+				D86E32D422EA1A7600F1CAC8 /* VideoFileCaptureDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +193,11 @@
 				TargetAttributes = {
 					D86E32AC22EA0B0100F1CAC8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 					D86E32B522EA0B0100F1CAC8 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -177,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86E32CB22EA0BD300F1CAC8 /* CameraFocusSquare.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86E32D122EA14B700F1CAC8 /* MediaFileCaptureProtocol.swift in Sources */,
+				D86E32D522EA1A7600F1CAC8 /* VideoFileCaptureDelegate.swift in Sources */,
+				D86E32C922EA0BCC00F1CAC8 /* CameraFocusSquare.swift in Sources */,
+				D86E32D322EA152300F1CAC8 /* PhotoFileCaptureDelegate.swift in Sources */,
+				D86E32CE22EA130F00F1CAC8 /* BZConstants.swift in Sources */,
+				D86E32D722EA1B9300F1CAC8 /* BZCameraSessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,9 +395,11 @@
 		D86E32C222EA0B0100F1CAC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -357,7 +413,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigZ.BZCamera;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -365,9 +422,11 @@
 		D86E32C322EA0B0100F1CAC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -381,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigZ.BZCamera;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -389,7 +448,9 @@
 		D86E32C522EA0B0100F1CAC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BY3A9X7HV;
 				INFOPLIST_FILE = BZCameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,7 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigZ.BZCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -406,7 +467,9 @@
 		D86E32C622EA0B0100F1CAC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BY3A9X7HV;
 				INFOPLIST_FILE = BZCameraTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,7 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bigZ.BZCameraTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
